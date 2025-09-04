@@ -4,4 +4,4 @@
 Этот репозиторий является каркасом для будущего веб-приложения.
 
 ## Ссылки
-- [https://github.com/twensevts](https://twensevts.github.io/myproject/)
+- [Публичная страница на GitHub Pages](https://twensevts.github.io/myproject/)
