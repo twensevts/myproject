@@ -238,13 +238,15 @@ body {
 
 .portfolio__row {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; 
   gap: 1.5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+  padding-bottom: 1rem;
 }
-
 .portfolio__item {
   flex: 0 0 auto;
+  width: 250px;
 }
 
 .portfolio__image {
@@ -262,16 +264,13 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-
-/* Добавьте эти стили для медиа-контейнера */
 .media {
   position: relative;
   width: 100%;
   max-width: 800px;
   margin: 2rem auto;
   overflow: hidden;
-  border: 1px solid #e0e0e0; /* для визуализации границ */
+  border: 1px solid #e0e0e0; 
 }
 
 .media::before {
