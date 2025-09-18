@@ -185,3 +185,29 @@ body{
     border: none;
     border-radius: 8px;
 }
+.portfolio-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.portfolio-item {
+    flex: 0 0 auto;
+}
+
+.portfolio-image {
+    width: 250px;
+    height: 180px;
+    object-fit: contain; /* Сохраняет пропорции без обрезания */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f8f8f8; /* Фон если изображение прозрачное */
+}
+
+.portfolio-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
