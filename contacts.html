@@ -10,38 +10,50 @@
     
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header>
-        <a href="/">Логотип или название сайта</a>
-        <!-- Главное меню навигации -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header__container">
+            <a class="header__logo" href="/">
+                ПростоСайт
+            </a>
+            
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link nav__link--active" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Уникальное основное содержимое страницы -->
-    <main>
-        <!-- Простые "хлебные крошки" -->
-        <nav aria-label="Хлебные крошки">
-            <a href="index.html">Контакты</a> →
-            <span>Расположение</span>
+    <main class="main">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--current">
+                    <span class="breadcrumbs__text">Контакты</span>
+                </li>
+            </ol>
         </nav>
 
-        <h1>Адреса</h1>
-        <section>
-            <h2>Кремль</h2>
+        <h1 class="main__title">Адреса</h1>
+        
+        <section id="kremlin" class="section section--target">
+            <h2 class="section__title">Кремль</h2>
         </section>
-
     </main>
 
-    <!-- Подвал сайта -->
-    <footer>
-        <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
-        <p>Телефон: +7 (123) 456-78-90</p>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2023 ПростоСайт. Все права защищены.</p>
+        <p class="footer__text">Телефон: +7 (123) 456-78-90</p>
     </footer>
 </body>
 </html>
